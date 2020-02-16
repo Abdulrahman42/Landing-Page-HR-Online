@@ -17,7 +17,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+  <link rel="shortcut icon" href="image/Capture-removebg-preview (1).png">
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -146,7 +146,7 @@
       <li class="nav-item">
         <a class="nav-link" href="reportsalary.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Report SALARY</span></a>
+          <span>Report Payroll</span></a>
       </li>
 
       <!-- Divider -->
@@ -320,7 +320,7 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Demo</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <img class="img-profile rounded-circle" src="image/download-removebg-preview.png">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -353,7 +353,7 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Report PPH21</h1>
+          <h1 class="h3 mb-2 text-gray-800">Report BPJSTK</h1>
           <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
 
           <select class="custom-select custom-select-lg mb-3 col-md-3">
@@ -374,39 +374,43 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Contoh Report PPH21</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Contoh Report BPJSTk</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>NIK</th>
                       <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>NO. KTP</th>
+                      <th>Tanggal Lahir</th>
+                      <th>Usia</th>
+                      <th>Upah</th>
+                      <th>JKK</th>
+                      <th>JKM</th>
+                      <th>JHT Pegawai</th>
+                      <th>JHT Perusahaan</th>
+                      <th>Pensiun Biaya Pegawai</th>
+                      <th>Pensiun Biaya Perusahaan</th>
+                      <th>Total Biaya Bpjs Bulanan</th>
                     </tr>
                   </thead>
-                  <!-- <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
-                    </tr>
-                  </tfoot> -->
                   <tbody>
                     <tr>
+                      <td>1</td>
                       <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                      <td>4324242</td>
+                      <td>8/1/1978</td>
+                      <td>41</td>
+                      <td>4000000</td>
+                      <td>9600</td>
+                      <td>12000</td>
+                      <td>80000</td>
+                      <td>148000</td>
+                      <td>40000</td>
+                      <td>160000</td>
+                      <td>499600</td>
                     </tr>
                   </tbody>
                 </table>
@@ -460,7 +464,7 @@
     </div>
   </div>
   <script>
-    document.getElementById("time").innerHTML ="@" + new Date().getFullYear() + ". Hak Cipta Dilindungi"
+    document.getElementById("time").innerHTML ="© " + new Date().getFullYear() + ". PT. Menara Karya Wibawa"
 </script>
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
