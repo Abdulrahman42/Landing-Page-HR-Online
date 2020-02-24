@@ -93,12 +93,158 @@ body {
     padding-bottom: 15%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 1920px) and (min-width: 1366px){
     #banner {
         /* background-image: linear-gradient(to right, #f5cdaa, #cfb495); */
         background-image: linear-gradient(to right, #3282b8, #0f4c75);
         color: #fff;
-        padding-top: 5%;
+        padding-top: 14%;
+        padding-bottom: 17%;
+    }
+
+    .promo-title {
+        font-size: 75px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .tag-title {
+        margin-left: 10px;
+        font-size: 16px;
+        margin-top: -20px;
+    }
+
+    .bottom-img {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        bottom: 15px;
+        left: 0;
+        background: url(image/waves.png);
+        animation: animate 10s linear infinite;
+    }
+
+    .bottom-img:before {
+        content: '';
+        width: 100%;
+        height: 140px;
+        background: url(image/waves.png);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0.4;
+        animation: animate-reverse 10s linear infinite;
+    }
+
+    .bottom-img:after {
+        content: '';
+        width: 100%;
+        height: 140px;
+        background: url(image/waves.png);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        opacity: 0.6;
+        animation-delay: -5s;
+        animation: animate 20s linear infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: 0;
+        }
+
+        100% {
+            background-position: 1360px;
+        }
+    }
+
+    @keyframes animate-reverse {
+        0% {
+            background-position: 1360px;
+        }
+
+        100% {
+            background-position: 0;
+        }
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        background-blend-mode: luminosity;
+        flex-grow: 1;
+        min-height: 350px;
+    }
+
+    .ok {
+        position: relative;
+        display: block;
+        width: 900px;
+        height: 400px;
+    }
+
+    .ok:after {
+        content: '';
+        background: url(image/indonesia-vector-map-png-favpng-Xju0xhPKLdSsV5tqGbH0am4Qn-removebg-preview.png);
+        opacity: 0.2;
+        width: 800px;
+        top: 10px;
+        left: 10px;
+        bottom: 100px;
+        right: 50px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    .intro div {
+        max-width: 500px;
+    }
+
+    .intro {
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .loaded .intro {
+        animation: fadeIn 1s ease-in 0.7s forwards;
+    }
+
+    .loaded .intro * {
+        animation: slideIn 0.6s cubic-bezier(0.54, 0.46, 0.54, 0.94) 2s forwards;
+    }
+
+    @keyframes fadeIn {
+        60% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes scaleIn {
+        100% {
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes slideIn {
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1280px){
+    #banner {
+        /* background-image: linear-gradient(to right, #f5cdaa, #cfb495); */
+        background-image: linear-gradient(to right, #3282b8, #0f4c75);
+        color: #fff;
+        padding-top: 13%;
         padding-bottom: 6%;
     }
 
@@ -242,6 +388,7 @@ body {
 /* ----service---- */
 
 #services {
+    margin-bottom: 60px;
     padding: 90px 0;
 }
 
@@ -344,13 +491,14 @@ body {
 }
 
 .about-title {
-    padding-top: 40px;
+    padding-top: 20px;
     font-weight: bold;
 }
 
 .img-fluids {
-    height: 75%;
-    width: 50%;
+    margin-top: 10px;
+    height: 180px;
+    width: auto;
 }
 
 /* ===footer=== */
